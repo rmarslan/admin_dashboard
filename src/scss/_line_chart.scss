@@ -6,6 +6,8 @@
     &__header {
         display: flex;
         justify-content: space-between;
+        background-color: transparent;
+        border: none;
     }
 
     &__header-actions {
@@ -24,4 +26,11 @@
             }
         }
     }
-} 
+
+    &__body {
+        &-chart {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
