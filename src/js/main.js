@@ -3,8 +3,7 @@ import "../index.html";
 import $ from "jquery";
 import "@popperjs/core";
 import Chart from "chart.js";
-// import "bootstrap/js/dist/util";
-// import "bootstrap/js/dist/collapse";
+import "./bootstrap-datepicker.min.js";
 import "bootstrap";
 
 $(document).ready(function () {
@@ -90,6 +89,32 @@ $(document).ready(function () {
 					},
 				],
 			},
+		},
+	});
+
+	$("#date-picker div").datepicker({
+		maxViewMode: 3,
+		todayBtn: "linked",
+		multidate: false,
+		todayHighlight: true,
+		toggleActive: true,
+	});
+
+	const pieChartCtx = $("#pie-chart");
+	new Chart(pieChartCtx, {
+		type: "doughnut",
+		data: {
+			labels: ["chrome", "firefox", "IE"],
+			datasets: [
+				{
+					data: [4401, 4001, 1503],
+					backgroundColor: ["#311b92", "#ab47bc", "#f25ca2"],
+				},
+			],
+		},
+
+		options: {
+			legend: false,
 		},
 	});
 });

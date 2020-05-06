@@ -22,3 +22,31 @@ body {
 .dropdown-toggle::after {
   display: none;
 }
+
+.card {
+  box-shadow: $box-shadow-main;
+}
+
+.circle {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+
+  &--primary {
+    background-color: $color-primary-main;
+  }
+
+  &--secondry {
+    background-color: $color-secondry-main;
+  }
+
+  &--tertiary {
+    background-color: $color-tertiary-main;
+  }
+}
+
+.row {
+  margin-bottom: 2rem;
+}

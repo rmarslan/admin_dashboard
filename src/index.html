@@ -721,6 +721,130 @@
                 </div>
               </div>
             </div>
+
+            <div class="w-100">
+              <div class="row">
+                <!-- ========= Calendar ============== -->
+                <div class="col-6">
+                  <div class="card date-picker">
+                    <div class="card-header line-chart__header">
+                      <h5 class="line-chart__header-title">Calendar</h5>
+                      <div class="line-chart__header-actions">
+                        <a
+                          href="#"
+                          class="line-chart__header-actions__icon mr-1"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            fill="black"
+                            width="18px"
+                            height="18px"
+                          >
+                            <path
+                              d="M12 6v3l4-4-4-4v3c-4.42 0-8 3.58-8 8 0 1.57.46 3.03 1.24 4.26L6.7 14.8c-.45-.83-.7-1.79-.7-2.8 0-3.31 2.69-6 6-6zm6.76 1.74L17.3 9.2c.44.84.7 1.79.7 2.8 0 3.31-2.69 6-6 6v-3l-4 4 4 4v-3c4.42 0 8-3.58 8-8 0-1.57-.46-3.03-1.24-4.26z"
+                            />
+                            <path d="M0 0h24v24H0z" fill="none" />
+                          </svg>
+                        </a>
+                        <a href="#" class="line-chart__header-actions__icon">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            fill="black"
+                            width="18px"
+                            height="18px"
+                          >
+                            <path d="M0 0h24v24H0z" fill="none" />
+                            <path
+                              d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
+                            />
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <div class="w-100">
+                        <div class="w-100" id="date-picker">
+                          <div class="w-100"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- ============ Pie Chart ============== -->
+                <div class="col-6">
+                  <div class="w-100">
+                    <div class="card">
+                      <div class="card-header line-chart__header">
+                        <h5 class="line-chart__header-title">Browser Usage</h5>
+                        <div class="line-chart__header-actions">
+                          <a
+                            href="#"
+                            class="line-chart__header-actions__icon mr-1"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 24 24"
+                              fill="black"
+                              width="18px"
+                              height="18px"
+                            >
+                              <path
+                                d="M12 6v3l4-4-4-4v3c-4.42 0-8 3.58-8 8 0 1.57.46 3.03 1.24 4.26L6.7 14.8c-.45-.83-.7-1.79-.7-2.8 0-3.31 2.69-6 6-6zm6.76 1.74L17.3 9.2c.44.84.7 1.79.7 2.8 0 3.31-2.69 6-6 6v-3l-4 4 4 4v-3c4.42 0 8-3.58 8-8 0-1.57-.46-3.03-1.24-4.26z"
+                              />
+                              <path d="M0 0h24v24H0z" fill="none" />
+                            </svg>
+                          </a>
+                          <a href="#" class="line-chart__header-actions__icon">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 24 24"
+                              fill="black"
+                              width="18px"
+                              height="18px"
+                            >
+                              <path d="M0 0h24v24H0z" fill="none" />
+                              <path
+                                d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
+                              />
+                            </svg>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="card-body">
+                        <div class="w-100">
+                          <canvas class="pie-chart" id="pie-chart"></canvas>
+                        </div>
+                        <table class="table browser-usage-table">
+                          <tr>
+                            <td>
+                              <i class="circle circle--primary"></i>
+                              Chrome
+                            </td>
+                            <td class="text-right">4401</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <i class="circle circle--secondry"></i>
+                              Firefox
+                            </td>
+                            <td class="text-right">4001</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <i class="circle circle--tertiary"></i>
+                              IE
+                            </td>
+                            <td class="text-right">1502</td>
+                          </tr>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </main>

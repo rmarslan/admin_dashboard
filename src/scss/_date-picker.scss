@@ -1,0 +1,52 @@
+.date-picker {
+	box-shadow: $box-shadow-main;
+	font-family: "roboto";
+	font-size: 1.2rem;
+	font-weight: 400;
+	color: $color-dark-1;
+
+	& div.datepicker {
+		width: 100%;
+		margin: 0px;
+		padding: 0px;
+	}
+
+	& table.table-condensed {
+		width: 100%;
+
+		& th {
+			font-size: 1.6rem;
+			font-weight: 400;
+			padding: 1.5rem;
+			color: $color-primary-dark;
+
+			&.next,
+			&.prev {
+				font-size: 2.7rem;
+				line-height: 0;
+			}
+		}
+
+		& td {
+			padding: 0.7rem;
+			margin: 0;
+		}
+
+		& td.active {
+			background-color: $color-secondry-main;
+			background-image: none;
+		}
+
+		& td.today {
+			background-color: $color-primary-main;
+			background-image: none;
+			color: $color-light-main;
+		}
+
+		& td.today:hover {
+			color: $color-light-main !important;
+			background-color: $color-primary-light !important;
+			background-image: none !important;
+		}
+	}
+}
