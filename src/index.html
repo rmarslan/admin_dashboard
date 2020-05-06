@@ -479,23 +479,40 @@
                 />
               </svg>
             </a>
-            <a href="#" class="ml-4">
-              <?xml version="1.0" ?><svg
-                class="navbar__icon"
-                height="32"
-                id="cog"
-                viewBox="0 0 32 32"
-                width="32"
-                xmlns="http://www.w3.org/2000/svg"
+            <div class="dropdown">
+              <div
+                rule="button"
+                class="ml-4 dropdown-toggle"
+                id="settings-dropdown-button"
+                data-toggle="dropdown"
+                aria-expanded="false"
               >
-                <path
-                  d="M14 0 H18 L19 6 L20.707 6.707 L26 3.293 L28.707 6 L25.293 11.293 L26 13 L32 14 V18 L26 19 L25.293 20.707 L28.707 26 L26 28.707 L20.707 25.293 L19 26 L18 32 L14 32 L13 26 L11.293 25.293 L6 28.707 L3.293 26 L6.707 20.707 L6 19 L0 18 L0 14 L6 13 L6.707 11.293 L3.293 6 L6 3.293 L11.293 6.707 L13 6 L14 0 z M16 10 A6 6 0 0 0 16 22 A6 6 0 0 0 16 10"
-                />
-              </svg>
-            </a>
+                <?xml version="1.0" ?><svg
+                  class="navbar__icon"
+                  height="32"
+                  id="cog"
+                  viewBox="0 0 32 32"
+                  width="32"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M14 0 H18 L19 6 L20.707 6.707 L26 3.293 L28.707 6 L25.293 11.293 L26 13 L32 14 V18 L26 19 L25.293 20.707 L28.707 26 L26 28.707 L20.707 25.293 L19 26 L18 32 L14 32 L13 26 L11.293 25.293 L6 28.707 L3.293 26 L6.707 20.707 L6 19 L0 18 L0 14 L6 13 L6.707 11.293 L3.293 6 L6 3.293 L11.293 6.707 L13 6 L14 0 z M16 10 A6 6 0 0 0 16 22 A6 6 0 0 0 16 10"
+                  />
+                </svg>
+              </div>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="settings-dropdown-button"
+              >
+                <li class="dropdown-item">Item 1</li>
+                <li class="dropdown-item">Item 2</li>
+                <li class="dropdown-item">Item 3</li>
+              </ul>
+            </div>
           </div>
         </nav>
 
+        <!-- ==================== Main Content ================== -->
         <div class="main__content">
           <div class="container-fluid">
             <div class="main__content-header">
@@ -508,6 +525,7 @@
             </div>
             <div class="row">
               <div class="col-6">
+                <!-- ============= Line Chart ============= -->
                 <div class="card line-chart">
                   <div class="card-header line-chart__header">
                     <h5 class="line-chart__header-title">Recent Movement</h5>
@@ -550,9 +568,142 @@
                   </div>
                 </div>
               </div>
+              <!-- ============== Stats =============== -->
               <div class="col-6">
-                <div class="card">
-                  Grid to show
+                <div class="w-100">
+                  <div class="row">
+                    <!-- card 1 -->
+                    <div class="col-6">
+                      <div class="card stat-card">
+                        <div class="card-body">
+                          <div class="row stat-card__header">
+                            <div class="col mr-auto stat-card__header-title">
+                              Sales Today
+                            </div>
+                            <div class="stat-card__header-avatar">
+                              <svg
+                                class="stat-card__header-avatar--icon"
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                fill="black"
+                                width="18px"
+                                height="18px"
+                              >
+                                <path d="M0 0h24v24H0z" fill="none" />
+                                <path
+                                  d="M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-3-4zM6 18.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm13.5-9l1.96 2.5H17V9.5h2.5zm-1.5 9c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"
+                                />
+                              </svg>
+                            </div>
+                          </div>
+                          <div class="stat-card__stat">2.890</div>
+                          <div class="stat-card__substat">
+                            <span class="stat-card__substat--profit"
+                              >2.05%</span
+                            >
+                            More sale than usual
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- card 2 -->
+                      <div class="card stat-card">
+                        <div class="card-body">
+                          <div class="row stat-card__header">
+                            <div class="col mr-auto stat-card__header-title">
+                              Visitors Today
+                            </div>
+                            <div class="stat-card__header-avatar">
+                              <svg
+                                class="stat-card__header-avatar--icon"
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                fill="black"
+                                width="18px"
+                                height="18px"
+                              >
+                                <path d="M0 0h24v24H0z" fill="none" />
+                                <path
+                                  d="M16.5 12c1.38 0 2.49-1.12 2.49-2.5S17.88 7 16.5 7C15.12 7 14 8.12 14 9.5s1.12 2.5 2.5 2.5zM9 11c1.66 0 2.99-1.34 2.99-3S10.66 5 9 5C7.34 5 6 6.34 6 8s1.34 3 3 3zm7.5 3c-1.83 0-5.5.92-5.5 2.75V19h11v-2.25c0-1.83-3.67-2.75-5.5-2.75zM9 13c-2.33 0-7 1.17-7 3.5V19h7v-2.25c0-.85.33-2.34 2.37-3.47C10.5 13.1 9.66 13 9 13z"
+                                />
+                              </svg>
+                            </div>
+                          </div>
+                          <div class="stat-card__stat">2.890</div>
+                          <div class="stat-card__substat">
+                            <span class="stat-card__substat--loss">4.05%</span>
+                            Less visitors than usual
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- card 3 -->
+                    <div class="col-6">
+                      <div class="card stat-card">
+                        <div class="card-body">
+                          <div class="row stat-card__header">
+                            <div class="col mr-auto stat-card__header-title">
+                              Total Earnings
+                            </div>
+                            <div class="stat-card__header-avatar">
+                              <svg
+                                class="stat-card__header-avatar--icon"
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                fill="black"
+                                width="18px"
+                                height="18px"
+                              >
+                                <path
+                                  d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"
+                                />
+                                <path d="M0 0h24v24H0z" fill="none" />
+                              </svg>
+                            </div>
+                          </div>
+                          <div class="stat-card__stat">$56.000</div>
+                          <div class="stat-card__substat">
+                            <span class="stat-card__substat--loss">1.05%</span>
+                            Less earning than usual
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- card 4 -->
+                      <div class="card stat-card">
+                        <div class="card-body">
+                          <div class="row stat-card__header">
+                            <div class="col mr-auto stat-card__header-title">
+                              Pending Orders
+                            </div>
+                            <div class="stat-card__header-avatar">
+                              <svg
+                                class="stat-card__header-avatar--icon"
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                fill="black"
+                                width="18px"
+                                height="18px"
+                              >
+                                <path
+                                  d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"
+                                />
+                                <path d="M0 0h24v24H0z" fill="none" />
+                              </svg>
+                            </div>
+                          </div>
+                          <div class="stat-card__stat">90</div>
+                          <div class="stat-card__substat">
+                            <span class="stat-card__substat--profit"
+                              >6.03%</span
+                            >
+                            More orders than usual
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

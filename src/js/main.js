@@ -2,6 +2,7 @@ import "../scss/main.scss";
 import "../index.html";
 import $ from "jquery";
 import Chart from "chart.js";
+import "bootstrap/js/dist/util";
 import "bootstrap/js/dist/collapse";
 
 $(document).ready(function () {
