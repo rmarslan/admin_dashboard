@@ -1,0 +1,146 @@
+.sidebar {
+  box-shadow: $box-shadow-main;
+  background-color: $color-light-main;
+  transition: margin-left 0.3s ease-in-out;
+
+  &.toggled {
+    margin-left: -250px;
+  }
+
+  &__brand {
+    display: block;
+    width: 100%;
+    padding: 2.3rem;
+    background-color: $color-primary-main;
+    font-size: 1.6rem;
+    color: $color-light-main;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+
+    &:hover {
+      color: $color-light-main;
+      text-decoration: none;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__user {
+    padding: 3.5rem 1.5rem 2rem 1.5rem;
+    text-align: center;
+    color: $color-primary-dark;
+
+    &-image {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      margin-bottom: 0.7rem;
+    }
+
+    &-name {
+      font-size: 1.4rem;
+      font-weight: 500;
+    }
+
+    &-profession {
+      font-size: 1.2rem;
+      font-weight: 300;
+      display: block;
+      margin-top: -3px;
+    }
+  }
+
+  &__navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    &-item.active > &-link {
+      background-color: $color-light-2;
+    }
+
+    &-header {
+      padding: 1.5rem 2rem;
+      font-size: 1.2rem;
+      font-weight: 400;
+      text-transform: capitalize;
+      line-height: 0;
+      color: $color-dark-3;
+    }
+
+    &-link {
+      & svg {
+        fill: $color-primary-dark;
+        vertical-align: middle;
+        width: 2rem;
+        height: 2rem;
+        margin-right: 0.6rem;
+        margin-top: -0.6rem;
+      }
+
+      &:hover svg {
+        fill: $color-primary-light;
+      }
+
+      &:link,
+      &:visited {
+        text-decoration: none;
+        font-size: 1.6rem;
+        font-weight: 300;
+        margin: 0px 0.5rem;
+        padding: 1rem 1.3rem;
+        color: $color-dark-1;
+        display: block;
+        border-radius: 5px;
+      }
+
+      &:hover,
+      &:active {
+        color: $color-primary-light;
+      }
+    }
+
+    &-dropdown &-link {
+      &:link,
+      &:visited {
+        padding: 0.5rem 2rem 0.5rem 5rem;
+        font-weight: 300;
+        font-size: 1.4rem;
+      }
+
+      &:hover,
+      &:active,
+      &.active {
+        color: $color-primary-light;
+      }
+    }
+  }
+
+  & [data-toggle="collapse"] {
+    position: relative;
+  }
+  & [data-toggle="collapse"]:before {
+    content: " ";
+    border: solid;
+    border-width: 0 0.3rem 0.3rem 0;
+    border-color: $color-primary-dark;
+    display: inline-block;
+    padding: 2.5px;
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 45%;
+    right: 2.2rem;
+    transition: all 0.2s ease-out;
+  }
+
+  & [aria-expanded="true"]:before {
+    transform: rotate(45deg);
+  }
+}

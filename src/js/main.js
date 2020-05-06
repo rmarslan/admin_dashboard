@@ -1,6 +1,13 @@
-import '../scss/main.scss';
-import '../index.html';
+import "../scss/main.scss";
+import "../index.html";
+import $ from "jquery";
+import "bootstrap/js/dist/collapse";
 
-// if(module.hot) {
-//     module.hot.accept();
-// }
+$(document).ready(function () {
+  const sideBarToggleButton = $("#sidebar-toggler-icon");
+  const sideBar = $("#sidebar");
+
+  sideBarToggleButton.on("click", () => {
+    sideBar.toggleClass("toggled");
+  });
+});

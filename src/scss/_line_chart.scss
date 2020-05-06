@@ -1,0 +1,27 @@
+.line-chart {
+    background-color: $color-light-main;
+    border-radius: 3px;
+    box-shadow: $box-shadow-main;
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__header-actions {
+        color: $color-light-main;
+        &__icon {
+            &:link,
+            &:visited {
+                text-decoration: none;
+                line-height: 0;
+
+                & svg {
+                    fill: $color-primary-main;
+                    width: 2rem;
+                    height: 2rem;
+                }
+            }
+        }
+    }
+} 
