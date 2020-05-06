@@ -1,9 +1,11 @@
 import "../scss/main.scss";
 import "../index.html";
 import $ from "jquery";
+import "@popperjs/core";
 import Chart from "chart.js";
-import "bootstrap/js/dist/util";
-import "bootstrap/js/dist/collapse";
+// import "bootstrap/js/dist/util";
+// import "bootstrap/js/dist/collapse";
+import "bootstrap";
 
 $(document).ready(function () {
 	const sideBarToggleButton = $("#sidebar-toggler-icon");
