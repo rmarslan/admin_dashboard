@@ -1,8 +1,10 @@
 import "../scss/main.scss";
 import "../index.html";
-import $ from "jquery";
+import "jquery";
 import "@popperjs/core";
 import Chart from "chart.js";
+import "./jquery-jvectormap-2.0.5.min.js";
+import "./jvectormapmirc.js";
 import "./bootstrap-datepicker.min.js";
 import "bootstrap";
 
@@ -115,6 +117,99 @@ $(document).ready(function () {
 
 		options: {
 			legend: false,
+		},
+	});
+
+	const mapData = {
+		US: 298,
+		SA: 200,
+		DE: 220,
+		FR: 540,
+		CN: 120,
+		AU: 760,
+		BR: 550,
+		IN: 200,
+		GB: 120,
+	};
+
+	$("#world-map").vectorMap({
+		map: "world_merc",
+		backgroundColor: "transparent",
+		zoomOnScroll: false,
+		regionStyle: {
+			initial: {
+				fill: "#dedede",
+				"fill-opacity": 1,
+				stroke: "none",
+				"stroke-width": 0,
+				"stroke-opacity": 1,
+			},
+		},
+
+		series: {
+			regions: [
+				{
+					values: mapData,
+					scale: ["#311b92"],
+					normalizeFunction: "polynomial",
+				},
+			],
+		},
+	});
+
+	const barChartCtx = document.getElementById("bar-chart");
+	new Chart(barChartCtx, {
+		type: "bar",
+		data: {
+			labels: [
+				"Jan",
+				"Feb",
+				"Mar",
+				"Apr",
+				"May",
+				"Jun",
+				"Jul",
+				"Aug",
+				"Sep",
+				"Oct",
+				"Nov",
+				"Dec",
+			],
+
+			datasets: [
+				{
+					data: [60, 30, 10, 30, 10, 50, 40, 20, 5, 15, 30, 45],
+					backgroundColor: "#311b92",
+				},
+			],
+		},
+		options: {
+			legend: false,
+			scales: {
+				yAxes: [
+					{
+						ticks: {
+							beginAtZero: true,
+							min: 0,
+							max: 70,
+						},
+
+						gridLines: {
+							display: true,
+							lineWidth: 0,
+						},
+					},
+				],
+
+				xAxes: [
+					{
+						gridLines: {
+							display: true,
+							lineWidth: 0,
+						},
+					},
+				],
+			},
 		},
 	});
 });

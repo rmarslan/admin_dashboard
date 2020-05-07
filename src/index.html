@@ -845,6 +845,300 @@
                 </div>
               </div>
             </div>
+
+            <!-- ========== World Map =================== -->
+            <div class="row">
+              <div class="w-100">
+                <div class="col-12">
+                  <div class="card">
+                    <div class="card-header line-chart__header">
+                      <h5 class="line-chart__header-title">Current Visitors</h5>
+                      <div class="line-chart__header-actions">
+                        <a
+                          href="#"
+                          class="line-chart__header-actions__icon mr-1"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            fill="black"
+                            width="18px"
+                            height="18px"
+                          >
+                            <path
+                              d="M12 6v3l4-4-4-4v3c-4.42 0-8 3.58-8 8 0 1.57.46 3.03 1.24 4.26L6.7 14.8c-.45-.83-.7-1.79-.7-2.8 0-3.31 2.69-6 6-6zm6.76 1.74L17.3 9.2c.44.84.7 1.79.7 2.8 0 3.31-2.69 6-6 6v-3l-4 4 4 4v-3c4.42 0 8-3.58 8-8 0-1.57-.46-3.03-1.24-4.26z"
+                            />
+                            <path d="M0 0h24v24H0z" fill="none" />
+                          </svg>
+                        </a>
+                        <a href="#" class="line-chart__header-actions__icon">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            fill="black"
+                            width="18px"
+                            height="18px"
+                          >
+                            <path d="M0 0h24v24H0z" fill="none" />
+                            <path
+                              d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
+                            />
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <div class="w-100">
+                        <div class="world-map" id="world-map"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Table and Bar Chart -->
+            <div class="row">
+              <div class="col-8">
+                <div class="card">
+                  <div class="card-header line-chart__header">
+                    <h5 class="line-chart__header-title">Latest Projects</h5>
+                    <div class="line-chart__header-actions">
+                      <a href="#" class="line-chart__header-actions__icon mr-1">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          fill="black"
+                          width="18px"
+                          height="18px"
+                        >
+                          <path
+                            d="M12 6v3l4-4-4-4v3c-4.42 0-8 3.58-8 8 0 1.57.46 3.03 1.24 4.26L6.7 14.8c-.45-.83-.7-1.79-.7-2.8 0-3.31 2.69-6 6-6zm6.76 1.74L17.3 9.2c.44.84.7 1.79.7 2.8 0 3.31-2.69 6-6 6v-3l-4 4 4 4v-3c4.42 0 8-3.58 8-8 0-1.57-.46-3.03-1.24-4.26z"
+                          />
+                          <path d="M0 0h24v24H0z" fill="none" />
+                        </svg>
+                      </a>
+                      <a href="#" class="line-chart__header-actions__icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          fill="black"
+                          width="18px"
+                          height="18px"
+                        >
+                          <path d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <table class="table projects-table table-striped">
+                      <thead>
+                        <tr>
+                          <th>Name</th>
+                          <th>Start Date</th>
+                          <th>End Date</th>
+                          <th>Status</th>
+                          <th>Assignee</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Operating System</td>
+                          <td>3/1/2020</td>
+                          <td>3/1/2021</td>
+                          <td>
+                            <div class="badge badge-info">In Progress</div>
+                          </td>
+                          <td>
+                            Jon Doe
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Database System</td>
+                          <td>3/2/2020</td>
+                          <td>5/6/2020</td>
+                          <td>
+                            <div class="badge badge-success">
+                              Done
+                            </div>
+                          </td>
+                          <td>
+                            Kane
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Web Server</td>
+                          <td>20/3/2020</td>
+                          <td>3/9/2020</td>
+                          <td>
+                            <div class="badge badge-danger">Cancelled</div>
+                          </td>
+                          <td>
+                            Clarck
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            Computer Network
+                          </td>
+                          <td>3/4/2020</td>
+                          <td>4/8/2020</td>
+                          <td>
+                            <div class="badge badge-primary">Done</div>
+                          </td>
+                          <td>
+                            Walter
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Web Design</td>
+                          <td>4/5/2020</td>
+                          <td>4/6/2020</td>
+                          <td>
+                            <div class="badge badge-info">In Progress</div>
+                          </td>
+                          <td>
+                            Williamson
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Cloud Computing</td>
+                          <td>4/6/2020</td>
+                          <td>10/11/2020</td>
+                          <td>
+                            <div class="badge badge-primary">Done</div>
+                          </td>
+                          <td>
+                            Malinda
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <div class="w-100">
+                      <div
+                        class="row align-items-center"
+                        style="margin-bottom: 0;"
+                      >
+                        <div class="col mr-auto projects-table__footer-title">
+                          Showing 1 to 6 of 9 projects
+                        </div>
+                        <div class="col-auto">
+                          <nav aria-label="pagination">
+                            <ul
+                              class="pagination projects-table__footer-pagination"
+                            >
+                              <li class="page-item disabled">
+                                <a
+                                  class="page-link"
+                                  href="#"
+                                  tabindex="-1"
+                                  aria-disabled="true"
+                                  >Previous</a
+                                >
+                              </li>
+                              <li class="page-item active">
+                                <a class="page-link" href="#">1</a>
+                              </li>
+                              <li class="page-item" aria-current="page">
+                                <a class="page-link" href="#">2</a>
+                              </li>
+                              <li class="page-item">
+                                <a class="page-link" href="#">3</a>
+                              </li>
+                              <li class="page-item">
+                                <a class="page-link" href="#">Next</a>
+                              </li>
+                            </ul>
+                          </nav>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Bar Chart -->
+              <div class="col-4">
+                <div class="w-100">
+                  <div class="card">
+                    <div class="card-header line-chart__header">
+                      <h5 class="line-chart__header-title">Monthly Sales</h5>
+                      <div class="line-chart__header-actions">
+                        <a
+                          href="#"
+                          class="line-chart__header-actions__icon mr-1"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            fill="black"
+                            width="18px"
+                            height="18px"
+                          >
+                            <path
+                              d="M12 6v3l4-4-4-4v3c-4.42 0-8 3.58-8 8 0 1.57.46 3.03 1.24 4.26L6.7 14.8c-.45-.83-.7-1.79-.7-2.8 0-3.31 2.69-6 6-6zm6.76 1.74L17.3 9.2c.44.84.7 1.79.7 2.8 0 3.31-2.69 6-6 6v-3l-4 4 4 4v-3c4.42 0 8-3.58 8-8 0-1.57-.46-3.03-1.24-4.26z"
+                            />
+                            <path d="M0 0h24v24H0z" fill="none" />
+                          </svg>
+                        </a>
+                        <a href="#" class="line-chart__header-actions__icon">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            fill="black"
+                            width="18px"
+                            height="18px"
+                          >
+                            <path d="M0 0h24v24H0z" fill="none" />
+                            <path
+                              d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
+                            />
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <div class="w-100">
+                        <canvas
+                          id="bar-chart"
+                          class="bar-chart"
+                          height="300"
+                        ></canvas>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-100">
+          <div class="row">
+            <div class="col">
+              <div class="footer">
+                <ul class="nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Suport</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Privacy</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Terms of Service</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                  </li>
+                </ul>
+                <div class="footer__copy">
+                  &copy; 2020 - <a href="#">Arslan</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </main>

@@ -12,7 +12,7 @@
     left: 0;
     z-index: -10;
     background-color: $color-primary-main;
-    content: '';
+    content: "";
   }
 }
 
@@ -47,5 +47,27 @@
       color: $color-light-2;
       letter-spacing: 1px;
     }
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 3rem;
+
+  & a {
+    &:link,
+    &:visited {
+      font-size: 1.4rem;
+      color: $color-dark-3;
+    }
+
+    &:hover {
+      color: $color-dark-main;
+    }
+  }
+
+  &__copy {
+    font-size: 1.6rem;
   }
 }
