@@ -8,6 +8,9 @@
 
 html {
   font-size: 62.5%;
+  @media (min-width: 1450px) {
+    font-size: 72.5%;
+  }
 }
 
 body {
@@ -49,5 +52,4 @@ body {
 
 .row {
   margin-bottom: 2rem;
-  align-items: stretch;
 }

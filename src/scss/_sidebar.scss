@@ -3,8 +3,18 @@
   background-color: $color-light-main;
   transition: margin-left 0.3s ease-in-out;
 
+  @media (max-width: 820px) {
+    margin-left: -250px;
+  }
   &.toggled {
     margin-left: -250px;
+
+    @media (min-width: 1450px) {
+      margin-left: -300px;
+    }
+    @media (max-width: 820px) {
+      margin-left: 0px;
+    }
   }
 
   &__brand {

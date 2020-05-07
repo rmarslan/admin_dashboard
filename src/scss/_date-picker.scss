@@ -5,6 +5,10 @@
 	font-weight: 400;
 	color: $color-dark-1;
 
+	@media (max-width: 400px) {
+		overflow-x: scroll;
+	}
+
 	& div.datepicker {
 		width: 100%;
 		margin: 0px;
@@ -16,6 +20,15 @@
 
 		& th {
 			font-size: 1.6rem;
+
+			@media (max-width: 500px) {
+				font-size: 1.4rem;
+			}
+
+			@media (max-width: 450px) {
+				font-size: 1.2rem;
+			}
+
 			font-weight: 400;
 			padding: 1.5rem;
 			color: $color-primary-dark;

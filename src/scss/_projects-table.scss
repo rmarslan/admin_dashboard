@@ -3,17 +3,42 @@
 	font-size: 1.6rem;
 	margin-bottom: 2rem;
 
+	@media (max-width: 620px) {
+		font-size: 1.2rem;
+	}
+
 	th {
 		font-size: 1.8rem;
 		font-weight: 400;
+
+		@media (max-width: 578px) {
+			font-size: 1.2rem;
+		}
 	}
 
-	&__footer-title {
-		font-size: 1.4rem;
-		font-weight: 300;
-	}
+	&__footer {
+		@media (max-width: 520px) {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		&-title {
+			font-size: 1.4rem;
+			font-weight: 300;
+			@media (max-width: 520px) {
+				text-align: center;
+				margin-bottom: 1rem;
+			}
+		}
 
-	&__footer-pagination {
-		font-size: 1.8rem;
+		&-pagination {
+			font-size: 1.8rem;
+		}
+	}
+}
+
+@media (max-width: 500px) {
+	.projects-table-responsive {
+		overflow-x: auto;
 	}
 }
