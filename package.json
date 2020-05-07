@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server --open"
+    "start": "webpack-dev-server --open",
+    "build": "webpack --config webpack.prod.js",
+    "build-dev": "webpack --config webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -21,16 +23,24 @@
   "devDependencies": {
     "@babel/core": "^7.9.6",
     "@babel/preset-env": "^7.9.6",
+    "autoprefixer": "^9.7.6",
     "babel-loader": "^8.1.0",
     "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^3.5.3",
+    "cssnano": "^4.1.10",
     "file-loader": "^6.0.0",
     "html-loader": "^1.1.0",
     "html-webpack-plugin": "^4.3.0",
     "mini-css-extract-plugin": "^0.9.0",
     "node-sass": "^4.14.1",
+    "postcss": "^7.0.29",
+    "postcss-combine-duplicated-selectors": "^8.1.0",
+    "postcss-combine-media-query": "^1.0.1",
+    "postcss-loader": "^3.0.0",
     "prettier": "^2.0.5",
     "sass-loader": "^8.0.2",
+    "uglify-js": "^3.9.2",
+    "uglifyjs-webpack-plugin": "^2.2.0",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11",
     "webpack-dev-server": "^3.10.3"

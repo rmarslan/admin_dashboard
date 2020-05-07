@@ -6,7 +6,9 @@ import Chart from "chart.js";
 import "./jquery-jvectormap-2.0.5.min.js";
 import "./jvectormapmirc.js";
 import "./bootstrap-datepicker.min.js";
-import "bootstrap";
+import "bootstrap/js/dist/collapse";
+import "bootstrap/js/dist/util";
+import "bootstrap/js/dist/dropdown";
 
 $(document).ready(function () {
 	const sideBarToggleButton = $("#sidebar-toggler-icon");
