@@ -32,7 +32,7 @@
     "html-loader": "^1.1.0",
     "html-webpack-plugin": "^4.3.0",
     "mini-css-extract-plugin": "^0.9.0",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "postcss": "^7.0.29",
     "postcss-combine-duplicated-selectors": "^8.1.0",
     "postcss-combine-media-query": "^1.0.1",
